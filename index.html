@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wholesale 2-Wheeler Spare Parts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center">
+        <img src="assets/logo.png" alt="Company Logo" class="h-10 mr-2">
+        <span class="text-lg font-bold text-blue-900">SpareParts Wholesale</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
+        <a href="#about" class="hover:text-blue-900">About</a>
+        <a href="#products" class="hover:text-blue-900">Products</a>
+        <a href="#why" class="hover:text-blue-900">Why Us</a>
+        <a href="#contact" class="hover:text-blue-900">Contact</a>
+      </nav>
+      <button onclick="openQuote()" class="bg-blue-900 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-800 transition">Get Quote</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Wholesale Supplier of 2-Wheeler Spare Parts</h1>
+      <p class="text-lg md:text-xl mb-8">Trusted distribution network. Quality parts. Competitive pricing.</p>
+      <button onclick="openQuote()" class="bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-300 transition">Request a Quote</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About Us</h2>
+        <p class="text-gray-600">We specialize in the wholesale and distribution of high-quality spare parts for motorcycles and scooters. With a strong supply chain and reliable service, we support retailers and garages with fast delivery and competitive pricing.</p>
+      </div>
+      <img src="assets/engine.jpg" alt="Spare Parts" class="rounded-2xl shadow-lg">
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section id="products" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Products</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <img src="assets/engine.jpg" alt="Engine Parts" class="rounded-lg mb-4">
+          <h3 class="font-semibold text-xl mb-2">Engine Parts</h3>
+          <p class="text-gray-600">Reliable and durable engine components for all major 2-wheeler brands.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <img src="assets/brakes.jpg" alt="Brakes" class="rounded-lg mb-4">
+          <h3 class="font-semibold text-xl mb-2">Brakes</h3>
+          <p class="text-gray-600">Safe, tested, and trusted braking systems for scooters and motorcycles.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <img src="assets/suspension.jpg" alt="Suspension" class="rounded-lg mb-4">
+          <h3 class="font-semibold text-xl mb-2">Suspension</h3>
+          <p class="text-gray-600">High-quality shock absorbers and suspension parts for smooth rides.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <img src="assets/accessories.jpg" alt="Accessories" class="rounded-lg mb-4">
+          <h3 class="font-semibold text-xl mb-2">Accessories</h3>
+          <p class="text-gray-600">Mirrors, grips, lights, and more to support every retailer’s needs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <img src="assets/electricals.jpg" alt="Electricals" class="rounded-lg mb-4">
+          <h3 class="font-semibold text-xl mb-2">Electricals</h3>
+          <p class="text-gray-600">Wiring kits, batteries, bulbs, and more for reliable performance.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <img src="assets/body.jpg" alt="Body Parts" class="rounded-lg mb-4">
+          <h3 class="font-semibold text-xl mb-2">Body Parts</h3>
+          <p class="text-gray-600">Panels, mudguards, seats, and covers for multiple vehicle models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="py-16 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Competitive Pricing</h3>
+        <p class="text-gray-600">Best wholesale rates with consistent supply for bulk orders.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Quality Assurance</h3>
+        <p class="text-gray-600">All spare parts are tested for reliability and durability.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+        <p class="text-gray-600">Strong distribution network ensures on-time delivery every time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <p class="text-gray-600 italic">“Reliable supplier with excellent service. Our orders are always on time and the parts are of great quality.”</p>
+          <h4 class="mt-4 font-semibold">– Auto Garage Owner</h4>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <p class="text-gray-600 italic">“We’ve been working with them for years. The pricing and consistency are unmatched.”</p>
+          <h4 class="mt-4 font-semibold">– Retail Spare Parts Dealer</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Contact Details</h3>
+        <p class="text-gray-600 mb-2">📞 +91-9876543210</p>
+        <p class="text-gray-600 mb-2">📧 info@sparepartswholesale.com</p>
+        <p class="text-gray-600">🏢 Industrial Area, New Delhi, India</p>
+      </div>
+      <form class="bg-white p-6 rounded-2xl shadow">
+        <input type="text" placeholder="Your Name" class="w-full mb-4 p-3 border rounded-lg">
+        <input type="email" placeholder="Your Email" class="w-full mb-4 p-3 border rounded-lg">
+        <textarea placeholder="Your Message" rows="4" class="w-full mb-4 p-3 border rounded-lg"></textarea>
+        <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Spare Parts Wholesale & Distribution. All rights reserved.</p>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white p-8 rounded-2xl shadow-lg max-w-lg w-full relative">
+      <button onclick="closeQuote()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
+      <h2 class="text-2xl font-bold mb-4">Request a Quote</h2>
+      <form>
+        <input type="text" placeholder="Your Name" class="w-full mb-4 p-3 border rounded-lg">
+        <input type="email" placeholder="Your Email" class="w-full mb-4 p-3 border rounded-lg">
+        <input type="text" placeholder="Phone Number" class="w-full mb-4 p-3 border rounded-lg">
+        <textarea placeholder="Products Required (e.g. Engine Parts, Brakes...)" rows="4" class="w-full mb-4 p-3 border rounded-lg"></textarea>
+        <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openQuote() {
+      document.getElementById("quoteModal").classList.remove("hidden");
+      document.getElementById("quoteModal").classList.add("flex");
+    }
+    function closeQuote() {
+      document.getElementById("quoteModal").classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>
